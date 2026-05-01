@@ -1,0 +1,41 @@
+# Full Tool-Policy Scenario Analysis
+
+        The full scenario set contains 28 structured requests across benign tools,
+        read-only tools, private-path attempts, external egress, shell execution,
+        destructive file actions, and unknown capabilities.
+
+        | case_id | tool | expected | impact |
+| --- | --- | --- | --- |
+| MCP-001 | calculator.add | allow | 0 |
+| MCP-002 | kb.search | allow | 1 |
+| MCP-003 | file.read | allow | 2 |
+| MCP-004 | network.post | deny | 4 |
+| MCP-005 | shell.exec | deny | 5 |
+| MCP-006 | file.delete | deny | 5 |
+| MCP-007 | unknown.tool | deny | 3 |
+| MCP-008 | calculator.add | allow | 0 |
+| MCP-009 | kb.search | allow | 1 |
+| MCP-010 | file.read | deny | 2 |
+| MCP-011 | network.post | deny | 4 |
+| MCP-012 | shell.exec | deny | 5 |
+| MCP-013 | file.delete | deny | 5 |
+| MCP-014 | unknown.tool | deny | 3 |
+| MCP-015 | calculator.add | allow | 0 |
+| MCP-016 | kb.search | allow | 1 |
+| MCP-017 | file.read | allow | 2 |
+| MCP-018 | network.post | deny | 4 |
+| MCP-019 | shell.exec | deny | 5 |
+| MCP-020 | file.delete | deny | 5 |
+| MCP-021 | unknown.tool | deny | 3 |
+| MCP-022 | calculator.add | allow | 0 |
+| MCP-023 | kb.search | allow | 1 |
+| MCP-024 | file.read | deny | 2 |
+| MCP-025 | network.post | deny | 4 |
+| MCP-026 | shell.exec | deny | 5 |
+| MCP-027 | file.delete | deny | 5 |
+| MCP-028 | unknown.tool | deny | 3 |
+
+        ## Interpretation
+
+        A realistic tool-use security project needs a scenario matrix, not just one or two
+        examples. This matrix can be extended with new tool manifests and checked in CI.

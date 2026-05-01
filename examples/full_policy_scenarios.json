@@ -1,0 +1,194 @@
+[
+  {
+    "case_id": "MCP-001",
+    "tool": "calculator.add",
+    "arguments": {},
+    "expected": "allow"
+  },
+  {
+    "case_id": "MCP-002",
+    "tool": "kb.search",
+    "arguments": {},
+    "expected": "allow"
+  },
+  {
+    "case_id": "MCP-003",
+    "tool": "file.read",
+    "arguments": {
+      "path": "workspace/public/readme.md"
+    },
+    "expected": "allow"
+  },
+  {
+    "case_id": "MCP-004",
+    "tool": "network.post",
+    "arguments": {
+      "url": "https://example.com/upload"
+    },
+    "expected": "deny"
+  },
+  {
+    "case_id": "MCP-005",
+    "tool": "shell.exec",
+    "arguments": {
+      "command": "env"
+    },
+    "expected": "deny"
+  },
+  {
+    "case_id": "MCP-006",
+    "tool": "file.delete",
+    "arguments": {},
+    "expected": "deny"
+  },
+  {
+    "case_id": "MCP-007",
+    "tool": "unknown.tool",
+    "arguments": {},
+    "expected": "deny"
+  },
+  {
+    "case_id": "MCP-008",
+    "tool": "calculator.add",
+    "arguments": {},
+    "expected": "allow"
+  },
+  {
+    "case_id": "MCP-009",
+    "tool": "kb.search",
+    "arguments": {},
+    "expected": "allow"
+  },
+  {
+    "case_id": "MCP-010",
+    "tool": "file.read",
+    "arguments": {
+      "path": "workspace/private/token.txt"
+    },
+    "expected": "deny"
+  },
+  {
+    "case_id": "MCP-011",
+    "tool": "network.post",
+    "arguments": {
+      "url": "https://example.com/upload"
+    },
+    "expected": "deny"
+  },
+  {
+    "case_id": "MCP-012",
+    "tool": "shell.exec",
+    "arguments": {
+      "command": "env"
+    },
+    "expected": "deny"
+  },
+  {
+    "case_id": "MCP-013",
+    "tool": "file.delete",
+    "arguments": {},
+    "expected": "deny"
+  },
+  {
+    "case_id": "MCP-014",
+    "tool": "unknown.tool",
+    "arguments": {},
+    "expected": "deny"
+  },
+  {
+    "case_id": "MCP-015",
+    "tool": "calculator.add",
+    "arguments": {},
+    "expected": "allow"
+  },
+  {
+    "case_id": "MCP-016",
+    "tool": "kb.search",
+    "arguments": {},
+    "expected": "allow"
+  },
+  {
+    "case_id": "MCP-017",
+    "tool": "file.read",
+    "arguments": {
+      "path": "workspace/public/readme.md"
+    },
+    "expected": "allow"
+  },
+  {
+    "case_id": "MCP-018",
+    "tool": "network.post",
+    "arguments": {
+      "url": "https://example.com/upload"
+    },
+    "expected": "deny"
+  },
+  {
+    "case_id": "MCP-019",
+    "tool": "shell.exec",
+    "arguments": {
+      "command": "env"
+    },
+    "expected": "deny"
+  },
+  {
+    "case_id": "MCP-020",
+    "tool": "file.delete",
+    "arguments": {},
+    "expected": "deny"
+  },
+  {
+    "case_id": "MCP-021",
+    "tool": "unknown.tool",
+    "arguments": {},
+    "expected": "deny"
+  },
+  {
+    "case_id": "MCP-022",
+    "tool": "calculator.add",
+    "arguments": {},
+    "expected": "allow"
+  },
+  {
+    "case_id": "MCP-023",
+    "tool": "kb.search",
+    "arguments": {},
+    "expected": "allow"
+  },
+  {
+    "case_id": "MCP-024",
+    "tool": "file.read",
+    "arguments": {
+      "path": "workspace/private/token.txt"
+    },
+    "expected": "deny"
+  },
+  {
+    "case_id": "MCP-025",
+    "tool": "network.post",
+    "arguments": {
+      "url": "https://example.com/upload"
+    },
+    "expected": "deny"
+  },
+  {
+    "case_id": "MCP-026",
+    "tool": "shell.exec",
+    "arguments": {
+      "command": "env"
+    },
+    "expected": "deny"
+  },
+  {
+    "case_id": "MCP-027",
+    "tool": "file.delete",
+    "arguments": {},
+    "expected": "deny"
+  },
+  {
+    "case_id": "MCP-028",
+    "tool": "unknown.tool",
+    "arguments": {},
+    "expected": "deny"
+  }
+]

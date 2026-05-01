@@ -57,3 +57,10 @@ max-risk analysis, and policy-decision summaries.
 The project includes structured tool manifests and threat classification labels.
 This mirrors how real agent platforms need machine-readable capability metadata
 before policy decisions can be audited.
+
+## Full Scenario Matrix
+
+The project includes 28 policy scenarios in
+[`examples/full_policy_scenarios.json`](examples/full_policy_scenarios.json) and
+a generated analysis report in
+[`reports/full_policy_scenarios_analysis.md`](reports/full_policy_scenarios_analysis.md).
