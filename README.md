@@ -69,3 +69,11 @@ a generated analysis report in
 
 Audit logs include a redaction helper so sensitive tool arguments can be recorded
 safely without leaking tokens or secrets into reports.
+
+## Real Public Dataset Experiment
+
+        The repository includes a 320-row sample from
+        [S-Labs/prompt-injection-dataset](https://huggingface.co/datasets/S-Labs/prompt-injection-dataset)
+        at `datasets/external/prompt_injection_sample.jsonl`. The accompanying report analyzes
+        real prompt-injection labels and lexical attack patterns, then connects them to MCP-style
+        permission boundaries.

@@ -1,0 +1,15 @@
+{
+  "sample_size": 320,
+  "label_counts": {
+    "0": 189,
+    "1": 131
+  },
+  "pattern_counts": {
+    "ignore": 14,
+    "instruction": 23,
+    "system": 20,
+    "secret": 4,
+    "tool": 3,
+    "previous": 3
+  }
+}
