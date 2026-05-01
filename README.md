@@ -64,3 +64,8 @@ The project includes 28 policy scenarios in
 [`examples/full_policy_scenarios.json`](examples/full_policy_scenarios.json) and
 a generated analysis report in
 [`reports/full_policy_scenarios_analysis.md`](reports/full_policy_scenarios_analysis.md).
+
+## Audit Redaction
+
+Audit logs include a redaction helper so sensitive tool arguments can be recorded
+safely without leaking tokens or secrets into reports.

@@ -1,0 +1,20 @@
+{
+  "default": "deny",
+  "allowed_tools": [
+    "calculator.add",
+    "kb.search",
+    "file.read"
+  ],
+  "review_tools": [
+    "network.post",
+    "shell.exec"
+  ],
+  "path_allowlist": [
+    "workspace/public/*"
+  ],
+  "redact_argument_keys": [
+    "token",
+    "secret",
+    "password"
+  ]
+}
