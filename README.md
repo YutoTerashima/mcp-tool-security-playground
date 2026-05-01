@@ -77,3 +77,18 @@ safely without leaking tokens or secrets into reports.
         at `datasets/external/prompt_injection_sample.jsonl`. The accompanying report analyzes
         real prompt-injection labels and lexical attack patterns, then connects them to MCP-style
         permission boundaries.
+
+## GPU-Backed Real Experiment
+
+This repository now includes a reproducible GPU-backed experiment using `S-Labs/prompt-injection-dataset`.
+The smoke path runs on the local RTX 5090 Laptop GPU through the `Transformers` conda
+environment and writes metrics, figures, and a markdown report.
+
+```powershell
+conda run -n Transformers python scripts/download_data.py --smoke
+conda run -n Transformers python scripts/preprocess_data.py --max-samples 384
+conda run -n Transformers python scripts/run_experiment.py --device cuda --smoke
+conda run -n Transformers python scripts/make_report.py
+```
+
+Main report: `reports/mcp_tool_security_gpu_report.md`.

@@ -1,0 +1,13 @@
+{
+  "kind": "classification",
+  "dataset": "S-Labs/prompt-injection-dataset",
+  "config": "default",
+  "split": "train",
+  "text_fields": [
+    "text"
+  ],
+  "label_expr": "label",
+  "report": "mcp_tool_security_gpu_report.md",
+  "title": "MCP Tool Security GPU Benchmark",
+  "description": "Prompt-injection detection and policy simulation using real S-Labs data."
+}
