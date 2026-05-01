@@ -40,3 +40,14 @@ method, limitations, and next experiments.
 ## Portfolio Notes
 
 This project demonstrates that tool safety needs explicit policy and execution boundaries, not only better prompts.
+
+## Deeper Analysis
+
+`examples/run_audit.py` adds an audit layer with impact scores, denial reasons,
+max-risk analysis, and policy-decision summaries.
+
+## Experiment Artifacts
+
+- Scenario set: [`examples/injection_cases.json`](examples/injection_cases.json)
+- Audit results: [`reports/tool_policy_audit.csv`](reports/tool_policy_audit.csv), [`reports/tool_policy_audit.json`](reports/tool_policy_audit.json)
+- Analysis: [`reports/tool_policy_audit_report.md`](reports/tool_policy_audit_report.md)

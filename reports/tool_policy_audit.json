@@ -1,0 +1,58 @@
+[
+  {
+    "case_id": "M001",
+    "tool": "calculator.add",
+    "decision": "allow",
+    "impact": 0,
+    "reason": "low-impact deterministic tool"
+  },
+  {
+    "case_id": "M002",
+    "tool": "kb.search",
+    "decision": "allow",
+    "impact": 1,
+    "reason": "read-only retrieval"
+  },
+  {
+    "case_id": "M003",
+    "tool": "file.read",
+    "decision": "allow",
+    "impact": 2,
+    "reason": "allowed path"
+  },
+  {
+    "case_id": "M004",
+    "tool": "file.read",
+    "decision": "deny",
+    "impact": 2,
+    "reason": "outside allowed path"
+  },
+  {
+    "case_id": "M005",
+    "tool": "network.post",
+    "decision": "deny",
+    "impact": 3,
+    "reason": "human review"
+  },
+  {
+    "case_id": "M006",
+    "tool": "shell.exec",
+    "decision": "deny",
+    "impact": 4,
+    "reason": "human review"
+  },
+  {
+    "case_id": "M007",
+    "tool": "file.delete",
+    "decision": "deny",
+    "impact": 3,
+    "reason": "not allowlisted"
+  },
+  {
+    "case_id": "M008",
+    "tool": "unknown.tool",
+    "decision": "deny",
+    "impact": 3,
+    "reason": "not allowlisted"
+  }
+]

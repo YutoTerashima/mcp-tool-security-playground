@@ -1,0 +1,9 @@
+case_id,tool,decision,impact,reason
+M001,calculator.add,allow,0,low-impact deterministic tool
+M002,kb.search,allow,1,read-only retrieval
+M003,file.read,allow,2,allowed path
+M004,file.read,deny,2,outside allowed path
+M005,network.post,deny,3,human review
+M006,shell.exec,deny,4,human review
+M007,file.delete,deny,3,not allowlisted
+M008,unknown.tool,deny,3,not allowlisted
