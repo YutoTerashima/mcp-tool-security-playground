@@ -51,3 +51,9 @@ max-risk analysis, and policy-decision summaries.
 - Scenario set: [`examples/injection_cases.json`](examples/injection_cases.json)
 - Audit results: [`reports/tool_policy_audit.csv`](reports/tool_policy_audit.csv), [`reports/tool_policy_audit.json`](reports/tool_policy_audit.json)
 - Analysis: [`reports/tool_policy_audit_report.md`](reports/tool_policy_audit_report.md)
+
+## Capability Manifests
+
+The project includes structured tool manifests and threat classification labels.
+This mirrors how real agent platforms need machine-readable capability metadata
+before policy decisions can be audited.
