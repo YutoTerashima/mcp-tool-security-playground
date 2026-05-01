@@ -2,7 +2,7 @@
   "kind": "classification",
   "dataset": "S-Labs/prompt-injection-dataset",
   "config": "default",
-  "split": "train",
+  "split": "train+validation+test",
   "text_fields": [
     "text"
   ],

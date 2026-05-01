@@ -1,0 +1,41 @@
+{
+  "kind": "tool_security",
+  "title": "MCP Tool Security Playground V2",
+  "report": "mcp_tool_security_v2_research_report.md",
+  "dataset_path": "data/processed/classification_examples.jsonl",
+  "text_field": "text",
+  "label_field": "label",
+  "positive_labels": [
+    "1",
+    "unsafe",
+    "2"
+  ],
+  "group_field": null,
+  "max_rows_full": 25000,
+  "max_rows_smoke": 800,
+  "experiments": [
+    {
+      "id": "static_policy",
+      "method": "static_policy"
+    },
+    {
+      "id": "tfidf_detector",
+      "method": "tfidf_word"
+    },
+    {
+      "id": "char_detector",
+      "method": "tfidf_char"
+    },
+    {
+      "id": "hybrid_policy_detector",
+      "method": "hybrid_policy"
+    }
+  ],
+  "ablations": [
+    "roleplay_wrapper",
+    "hidden_instruction",
+    "unicode_casing",
+    "tool_exfiltration"
+  ],
+  "discussion": "Tool safety is a routing problem rather than just a classifier problem. V2 measures detector recall, benign pass rate, and the cost of moving decisions from allow/deny into review."
+}
