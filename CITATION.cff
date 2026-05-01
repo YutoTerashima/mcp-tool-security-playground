@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it as below."
+title: "mcp-tool-security-playground"
+authors:
+  - family-names: "Terashima"
+    given-names: "Yuto"
+date-released: "2026-05-02"
+repository-code: "https://github.com/YutoTerashima/mcp-tool-security-playground"
+contact:
+  - type: email
+    value: "yutoterashima4@gmail.com"

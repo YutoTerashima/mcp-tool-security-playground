@@ -1,0 +1,16 @@
+[project]
+name = "mcp-tool-security-playground"
+version = "0.1.0"
+description = "MCP and tool-use security playground."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Yuto Terashima", email = "yutoterashima4@gmail.com" }]
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

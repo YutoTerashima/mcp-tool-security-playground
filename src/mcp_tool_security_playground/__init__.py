@@ -1,0 +1,1 @@
+"""MCP Tool Security Playground."""
