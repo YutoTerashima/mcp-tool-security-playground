@@ -31,3 +31,12 @@ deny network.post: tool requires human review
 - Human-review flags for high-impact tools
 - Path allowlists for file operations
 - Separate policy decision from tool execution
+
+## Research Brief
+
+See [`docs/research_brief.md`](docs/research_brief.md) for the threat model,
+method, limitations, and next experiments.
+
+## Portfolio Notes
+
+This project demonstrates that tool safety needs explicit policy and execution boundaries, not only better prompts.
