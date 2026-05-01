@@ -94,15 +94,62 @@ conda run -n Transformers python scripts/make_report.py
 Main report: `reports/mcp_tool_security_gpu_report.md`.
 
 <!-- V2_RESEARCH_UPGRADE -->
-## Publishable V2 Research Upgrade
+## Publishable V2 Research Results
 
-This repository now includes a project-level V2 experiment suite:
+This repository now includes a full V2 research suite with real data, multiple baselines, ablations, result artifacts, figures, and failure analysis. The README summarizes the measured run so the project can be judged from results, not just project intent.
 
-- Reproducible matrix: `configs/experiment_matrix.yaml`
-- Main runner: `scripts/run_matrix.py --device cuda --profile full`
-- Failure analysis: `scripts/analyze_failures.py`
-- Research report: `reports/mcp_tool_security_v2_research_report.md`
-- Experiment index: `reports/results/experiment_index.json`
+### Dataset And Scale
 
-The V2 artifacts include multiple experiments, ablations, figures, failure cases, and a discussion section while keeping raw caches and large checkpoints out of Git.
+S-Labs prompt-injection dataset using train, validation, and test splits; the full V2 run contains 15,291 tool-use security prompts.
 
+- Full-profile result rows: `4`
+- Experiment profile: `full`
+- Experiment index: [`reports/results/experiment_index.json`](reports/results/experiment_index.json)
+- Full report: [`reports/mcp_tool_security_v2_research_report.md`](reports/mcp_tool_security_v2_research_report.md)
+
+### Main Results
+
+| experiment_id | accuracy | macro_f1 | unsafe_recall | safe_recall | auroc | runtime_seconds |
+| --- | --- | --- | --- | --- | --- | --- |
+| static_policy | 0.6307 | 0.5542 | 0.2404 | 0.9505 | 0.5955 | 0.0250 |
+| tfidf_detector | 0.9626 | 0.9622 | 0.9489 | 0.9738 | 0.9939 | 0.2010 |
+| char_detector | 0.9639 | 0.9635 | 0.9588 | 0.9681 | 0.9922 | 0.7270 |
+| hybrid_policy_detector | 0.9425 | 0.9422 | 0.9727 | 0.9177 | 0.9922 | 0.7260 |
+
+### Analysis
+
+- Detector-based routing substantially outperforms static policy: the best TF-IDF/char detectors reach roughly 0.962-0.964 macro-F1 on real prompt-injection data.
+- The hybrid policy improves unsafe recall to about 0.973, but lowers benign pass rate compared with pure detectors, exposing the practical allow/deny/review tradeoff.
+- Perturbation probes show hidden-instruction and tool-exfiltration wrappers push rule routing toward broad denial, which is useful for safety but creates overblocking pressure.
+- The project now frames MCP security as an execution-policy problem: prompt text, tool risk, classifier confidence, and routing outcome are evaluated together.
+
+### Failure Analysis
+
+- `false_negative`: 78 records
+- `false_positive`: 2 records
+
+The public failure artifacts use redacted previews or structured metadata where source examples may contain harmful, private, or otherwise sensitive text. This keeps the analysis reproducible without turning the README into a prompt-injection or unsafe-content corpus.
+
+### Key Artifacts
+
+- [`reports/results/v2_main_results.csv`](reports/results/v2_main_results.csv)
+- [`reports/results/v2_ablation_results.csv`](reports/results/v2_ablation_results.csv)
+- [`reports/results/v2_failure_cases.json`](reports/results/v2_failure_cases.json)
+- [`reports/figures/v2_ablation_macro_f1.png`](reports/figures/v2_ablation_macro_f1.png)
+- [`reports/figures/v2_confusion_matrix.png`](reports/figures/v2_confusion_matrix.png)
+- [`reports/figures/v2_model_macro_f1.png`](reports/figures/v2_model_macro_f1.png)
+
+Figures:
+
+- [`reports/figures/v2_ablation_macro_f1.png`](reports/figures/v2_ablation_macro_f1.png)
+- [`reports/figures/v2_confusion_matrix.png`](reports/figures/v2_confusion_matrix.png)
+- [`reports/figures/v2_model_macro_f1.png`](reports/figures/v2_model_macro_f1.png)
+
+### Reproduction
+
+```powershell
+conda run -n Transformers python scripts/run_matrix.py --device cuda --profile full
+conda run -n Transformers python scripts/analyze_failures.py
+conda run -n Transformers python scripts/make_report.py
+conda run -n Transformers python -m pytest
+```
