@@ -1,0 +1,483 @@
+{
+  "repo": "mcp-tool-security-playground",
+  "generated_at_utc": "2026-05-02T07:25:22.348066+00:00",
+  "git_commit": "1118221",
+  "artifacts": [
+    {
+      "path": "configs/experiment.yaml",
+      "kind": "configuration",
+      "size_bytes": 395,
+      "sha256": "a45fb06dc02db5eb04a3444ed05780f904266f6a78cfaa194f5616a0782590d7",
+      "review_use": "experiment or model configuration"
+    },
+    {
+      "path": "configs/experiment_matrix.yaml",
+      "kind": "configuration",
+      "size_bytes": 1062,
+      "sha256": "d2d555d6302b555e36259df568fc463deef9bda647946c11a48eaa01601ad01b",
+      "review_use": "experiment or model configuration"
+    },
+    {
+      "path": "reports/figures/gpu_confusion_matrix.png",
+      "kind": "figure",
+      "size_bytes": 21082,
+      "sha256": "f5854e2fc76355f9e3ff98e57586ff810d5e41dad86986a80db0d72231080498",
+      "review_use": "visual result analysis"
+    },
+    {
+      "path": "reports/figures/top_tier_review_scores.png",
+      "kind": "figure",
+      "size_bytes": 45756,
+      "sha256": "f9244db1f1eb9013361643eac751f66da9537998a11c0e38ff2ad0b5211aa405",
+      "review_use": "visual result analysis"
+    },
+    {
+      "path": "reports/figures/v2_ablation_macro_f1.png",
+      "kind": "figure",
+      "size_bytes": 59032,
+      "sha256": "96495d37c20782860e34e2aaa3e1a1f853dfaaed5d36cd5abd02e2fe0dda4cdb",
+      "review_use": "visual result analysis"
+    },
+    {
+      "path": "reports/figures/v2_confusion_matrix.png",
+      "kind": "figure",
+      "size_bytes": 45969,
+      "sha256": "8d573561de9493fa05842e9fc68bb57c3fada8aa6fe36ee130be52d179a563b3",
+      "review_use": "visual result analysis"
+    },
+    {
+      "path": "reports/figures/v2_model_macro_f1.png",
+      "kind": "figure",
+      "size_bytes": 58050,
+      "sha256": "f660d7555fd57e33367667fe4525790affe84b11b416bc5543a0eba7bd7f1ace",
+      "review_use": "visual result analysis"
+    },
+    {
+      "path": "reports/full_policy_scenarios.csv",
+      "kind": "metric_table",
+      "size_bytes": 824,
+      "sha256": "732f2bd73e9e906374821405b98ad42f125d546f1c2d0668e8e6a828427cfd8b",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "reports/results/claim_evidence_matrix.csv",
+      "kind": "metric_table",
+      "size_bytes": 1485,
+      "sha256": "b779ad743268873a3a105f877b3446f486366d96a74e4193ced130e27f7ae7f6",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/gpu_training_curve.csv",
+      "kind": "metric_table",
+      "size_bytes": 61,
+      "sha256": "63d2feed22a9180a0bb7edb0dc621cba8c783bf9b28fc2b61eedbe1eacd23965",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/v2_ablation_results.csv",
+      "kind": "metric_table",
+      "size_bytes": 759,
+      "sha256": "3076f688165281bf5ef7e49db333a96852b2443ffcc877ef165279487ab08924",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/v2_main_results.csv",
+      "kind": "metric_table",
+      "size_bytes": 1063,
+      "sha256": "532963cd197b9027e27284d6332dfc9a8c67096e1d214cf5238f1da97f9d06df",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/tool_policy_audit.csv",
+      "kind": "metric_table",
+      "size_bytes": 380,
+      "sha256": "ac0b0c31fe59aba461c599b786b1f8a62a44684fdd29e8d26998a6004222fe8e",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "pyproject.toml",
+      "kind": "other",
+      "size_bytes": 430,
+      "sha256": "8b62510d84e256def1898aad13530ed9a084dd0d131fd56833b5ae91dcb747a8",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "README.md",
+      "kind": "report_or_docs",
+      "size_bytes": 8456,
+      "sha256": "4db3d146c66cd486cfa3268ad7dbe042dcad9c77fe4211683623032793a36f96",
+      "review_use": "first-screen reviewer orientation"
+    },
+    {
+      "path": "docs/research_brief.md",
+      "kind": "report_or_docs",
+      "size_bytes": 914,
+      "sha256": "0c2e137a439069bf4d752fc3846f5d1e9ef71301a9ef495472e8298951f354ee",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "docs/threat_model.md",
+      "kind": "report_or_docs",
+      "size_bytes": 174,
+      "sha256": "4b849d876970943a4cb3ae423bbe0d7f72e9f5dd21c2df7f8c5d7c99b5dd96e8",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "docs/top_tier_reviewer_packet.md",
+      "kind": "report_or_docs",
+      "size_bytes": 3547,
+      "sha256": "024d233ec6ed7b5534207d2c1e9ffcd32a58f76850717c704f75c4f7b2c7f650",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "reports/audit_analysis.md",
+      "kind": "report_or_docs",
+      "size_bytes": 418,
+      "sha256": "d597240346d169302f99259a6b7c34f8966a70088b4d3a4dcfcee5560a4e4811",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/full_policy_scenarios_analysis.md",
+      "kind": "report_or_docs",
+      "size_bytes": 1632,
+      "sha256": "16525c17a80c0421fa74ca3c47db66e08cac3f91db48ea451c78173d0fab06ae",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/maturity_review.md",
+      "kind": "report_or_docs",
+      "size_bytes": 6906,
+      "sha256": "d7c5dd0335efe97094ea8a3e7f3c83225826a4d41848d514929a27594658c6dc",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/mcp_tool_security_gpu_report.md",
+      "kind": "report_or_docs",
+      "size_bytes": 4625,
+      "sha256": "60aaa3c723936bd3c4665899cdb160193c5296a2cf4a92f1c0a4baf75b8a77c9",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/mcp_tool_security_v2_research_report.md",
+      "kind": "report_or_docs",
+      "size_bytes": 6348,
+      "sha256": "14f462ff28daecc18632d45689b4b8101da6f2c50047e98e0d5f295ac6ae9814",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/policy_matrix.md",
+      "kind": "report_or_docs",
+      "size_bytes": 343,
+      "sha256": "9ce024a8b5f243acc30fee955ffc9b60b3f130a5fc9538ddae60665c311b8063",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/real_prompt_injection_analysis.md",
+      "kind": "report_or_docs",
+      "size_bytes": 764,
+      "sha256": "fdcb492f94b6c883b5b91967130942540590dafa535ef54c9f962b1b54bc0038",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/risk_report.md",
+      "kind": "report_or_docs",
+      "size_bytes": 257,
+      "sha256": "701f218c456c69c2a2301c39652c3095031c6ac4622e48e824467d7c47861be2",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/tool_policy_audit_report.md",
+      "kind": "report_or_docs",
+      "size_bytes": 1261,
+      "sha256": "33c9ff88d8b315de9223cbf6eca25c9fd384ee8a85742ce57eeffb82f1b971da",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "scripts/analyze_failures.py",
+      "kind": "source_or_test",
+      "size_bytes": 1454,
+      "sha256": "73bc120f9b39bca7127b96cc30710529a0c277a888cbcf7ab1aaff7c40bd0b09",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/download_data.py",
+      "kind": "source_or_test",
+      "size_bytes": 284,
+      "sha256": "0fd00697a41c45db310f463dd8f5967d3e749c657a6985c578b0ee43837dbd96",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/gpu_experiment.py",
+      "kind": "source_or_test",
+      "size_bytes": 31340,
+      "sha256": "37b2eeade55e59da7b77ab557acc72a3f68fb4746220f136d7039d8281cc5a66",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/make_report.py",
+      "kind": "source_or_test",
+      "size_bytes": 3469,
+      "sha256": "f67806488b727a69a782bc723859362850baf512a7b45c7ee04e3e598bedab62",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/preprocess_data.py",
+      "kind": "source_or_test",
+      "size_bytes": 223,
+      "sha256": "6295125239bb4992208c6613fae4c6af1325bb2e34c03b52cc653de13aed7fbf",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/run_experiment.py",
+      "kind": "source_or_test",
+      "size_bytes": 82,
+      "sha256": "20850eb44719474b29842436f5b147604f2ceaf5b8356cf6630b164da63d3792",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/run_matrix.py",
+      "kind": "source_or_test",
+      "size_bytes": 40862,
+      "sha256": "883126afc52d318b5db78ecb685adc8f2545cc7f7567b55391db241f190b858d",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "src/mcp_tool_security_playground/__init__.py",
+      "kind": "source_or_test",
+      "size_bytes": 37,
+      "sha256": "8a50e196e94bdbed797a2162da571f9ef63f9dc67fb5e7526785e710977697da",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/mcp_tool_security_playground/attack_perturbations.py",
+      "kind": "source_or_test",
+      "size_bytes": 2539,
+      "sha256": "7aee43bbc29aca3100509e197a22cbf8d90aa925ad255cec67aa4972c67a24b3",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/mcp_tool_security_playground/audit.py",
+      "kind": "source_or_test",
+      "size_bytes": 1364,
+      "sha256": "9f39e8c73465aba3164f6c286b170cba96fcec00d14c04b8bca4f647f28c03e4",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/mcp_tool_security_playground/audit_logger.py",
+      "kind": "source_or_test",
+      "size_bytes": 2529,
+      "sha256": "62acea678884dd6e53e80ebb09853bf2d310b5f28ad1377e56e7fc67d334af6c",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/mcp_tool_security_playground/manifest.py",
+      "kind": "source_or_test",
+      "size_bytes": 957,
+      "sha256": "c4902ea796e43565100c87ebda2d3309c8fc7a47c9f5dbe23dce44abc10235ce",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/mcp_tool_security_playground/mock_server.py",
+      "kind": "source_or_test",
+      "size_bytes": 927,
+      "sha256": "73d3661db026708daa70021ec69a4b923d80855aea7986c2c9fc0a2ef1d12b02",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/mcp_tool_security_playground/policy.py",
+      "kind": "source_or_test",
+      "size_bytes": 1024,
+      "sha256": "6b894d6bd96530ecc65074d0cfb3a61a2b355a0afc582f630c8056235bc30b54",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/mcp_tool_security_playground/policy_router.py",
+      "kind": "source_or_test",
+      "size_bytes": 2562,
+      "sha256": "e10b562c05e7211617858a03f7a19768d87b62e48205e34ef67837319d1008e0",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/mcp_tool_security_playground/redaction.py",
+      "kind": "source_or_test",
+      "size_bytes": 394,
+      "sha256": "59ef6088ecd502587d0bb00801e8278383205674ec9c20819010d66fa2cb539c",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/mcp_tool_security_playground/research_report.py",
+      "kind": "source_or_test",
+      "size_bytes": 1499,
+      "sha256": "0878d242263f488213c004043bbb4f69e921f88fd133d99e5da616d5d4feff78",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/mcp_tool_security_playground/scenarios.py",
+      "kind": "source_or_test",
+      "size_bytes": 904,
+      "sha256": "5bf87488fc9c2bf67d46f628eefcf3f0f95ebc282284d50dd9fb8aab3a6e1636",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/mcp_tool_security_playground/threats.py",
+      "kind": "source_or_test",
+      "size_bytes": 677,
+      "sha256": "025da80e60e047fa2c3219b84396ba595255be1f7db0fa845473c2525a70f811",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "tests/conftest.py",
+      "kind": "source_or_test",
+      "size_bytes": 123,
+      "sha256": "0002b5341b19e442565f99ea21759c27046cf13b6c7f9def582f0f383471a5f5",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_audit.py",
+      "kind": "source_or_test",
+      "size_bytes": 332,
+      "sha256": "ea37068875c3beeff1674ee9d4a7d40f968e849bbc4902e9f25f5350760c1f26",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_manifest.py",
+      "kind": "source_or_test",
+      "size_bytes": 452,
+      "sha256": "d04987bad216f0dc557869ef1b11ebbf8731a2ea310174939cb2bef5946389eb",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_maturity_assets.py",
+      "kind": "source_or_test",
+      "size_bytes": 975,
+      "sha256": "043d7607a38e32e7c5a75b679fe0acfceac6389d669fe036a9b3b44b535512c6",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_policy.py",
+      "kind": "source_or_test",
+      "size_bytes": 326,
+      "sha256": "89331e8da025f7b9555b6e4f1d81f87af9ae3fc054834eb9e8dbb209c5fb271a",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_real_experiment_artifacts.py",
+      "kind": "source_or_test",
+      "size_bytes": 1187,
+      "sha256": "7ada364b78f2151dbcd3ef56e72510e52451c83b3642efa5d33647539b28949e",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_real_prompt_injection_data.py",
+      "kind": "source_or_test",
+      "size_bytes": 384,
+      "sha256": "e080194d52c6f44d4e6e3b903229f98924f95418607e7fc391a68a90ed8b38eb",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_redaction.py",
+      "kind": "source_or_test",
+      "size_bytes": 161,
+      "sha256": "da1669f9b09584f75462a7a3f66037ac451c5de3af13391a39316bb742219121",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_scenarios.py",
+      "kind": "source_or_test",
+      "size_bytes": 283,
+      "sha256": "4d17cd439439e35cddb4a90af098cec5a68a756ad281b92e8516d1ffa532f8cc",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_top_tier_quality_gate.py",
+      "kind": "source_or_test",
+      "size_bytes": 1942,
+      "sha256": "ef892c5898daa21756e3ce7620a2d9d09023d7ecfc7f93b73cd086df91ff9859",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_v2_research_artifacts.py",
+      "kind": "source_or_test",
+      "size_bytes": 1489,
+      "sha256": "c0b5d5fa3d6744af99ff7ee8d844df24f340518b59a010b68514ac0709be1d10",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "configs/tool_policy.json",
+      "kind": "structured_result",
+      "size_bytes": 314,
+      "sha256": "c09ae285595b3bf85cfe85d7d8a712e57ed7df886d2878375198860bf0a18f69",
+      "review_use": "experiment or model configuration"
+    },
+    {
+      "path": "reports/real_prompt_injection_analysis.json",
+      "kind": "structured_result",
+      "size_bytes": 228,
+      "sha256": "4a3de2b87e7727a9f63ee2599f43bc2508946408e380c2ef01e099c5b9402395",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "reports/results/artifact_manifest.json",
+      "kind": "structured_result",
+      "size_bytes": 17827,
+      "sha256": "1d7dc00822e4772496a68a1556d211f814baa607d5a4453c6edb8ac16c5046cb",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/experiment_index.json",
+      "kind": "structured_result",
+      "size_bytes": 3877,
+      "sha256": "91ee999eee4102cc91ca4ec47a033627b0b37586e41e03df698ba9ce05acc509",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/gpu_classification_metrics.json",
+      "kind": "structured_result",
+      "size_bytes": 62111,
+      "sha256": "e9e004bd9d09d4356609c8473bd5f274614fc3fac6c776665c5a13574b3f4b07",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/reproducibility_manifest.json",
+      "kind": "structured_result",
+      "size_bytes": 1420,
+      "sha256": "686f118d69f1f36301b6119eb13992ffb1e30373b908040d62054f654bd5e68b",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/top_tier_quality_gate.json",
+      "kind": "structured_result",
+      "size_bytes": 649,
+      "sha256": "5b95deb9abd0ac08f1f7bee34e222c138f419ffd138d15d9fc62685c0369e14f",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/v2_failure_analysis.json",
+      "kind": "structured_result",
+      "size_bytes": 6353,
+      "sha256": "b118a3d755d2f71276e518a391907fe4bb2b696fce714b2f2ba01600a9f277be",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/v2_failure_cases.json",
+      "kind": "structured_result",
+      "size_bytes": 18366,
+      "sha256": "ebcbee234b03597f420e599a2de19fec7e817997c60cca51f3ec3152168be109",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/tool_policy_audit.json",
+      "kind": "structured_result",
+      "size_bytes": 1132,
+      "sha256": "b2ea449c7658e2c9f7b5ee35f23d6fffd77fb9d78bde459145343c77a50a1c99",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "notebooks/maturity_walkthrough.ipynb",
+      "kind": "walkthrough_or_notebook",
+      "size_bytes": 2160,
+      "sha256": "930aedbd18bf044168fbcac13d86af0ecf59c1e3242f7d3bc8072614e09e5699",
+      "review_use": "walkthrough or original notebook evidence"
+    }
+  ]
+}

@@ -81,6 +81,12 @@
       "method": "hybrid_policy",
       "runtime_seconds": 0.726,
       "rows": 15291
+    },
+    {
+      "experiment_id": "top_tier_review_gate",
+      "artifact_count": 6,
+      "coverage_score": 1.0,
+      "review_value": "evidence-backed claims, artifact provenance, reproducibility manifest, and strict audit gate"
     }
   ],
   "artifacts": [
@@ -89,7 +95,13 @@
     "reports\\results\\v2_failure_cases.json",
     "reports\\figures\\v2_ablation_macro_f1.png",
     "reports\\figures\\v2_confusion_matrix.png",
-    "reports\\figures\\v2_model_macro_f1.png"
+    "reports\\figures\\v2_model_macro_f1.png",
+    "docs/top_tier_reviewer_packet.md",
+    "reports/results/claim_evidence_matrix.csv",
+    "reports/results/artifact_manifest.json",
+    "reports/results/reproducibility_manifest.json",
+    "reports/results/top_tier_quality_gate.json",
+    "reports/figures/top_tier_review_scores.png"
   ],
   "discussion": "Tool safety is a routing problem rather than just a classifier problem. V2 measures detector recall, benign pass rate, and the cost of moving decisions from allow/deny into review.",
   "total_runtime_seconds": 2.024
